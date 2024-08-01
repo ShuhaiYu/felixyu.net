@@ -19,8 +19,8 @@ export default async function Page(context: { params: { slug: string } }) {
     client: notion,
   });
 
-  renderer.use(hljsPlugin({}));
-  renderer.use(bookmarkPulgins(undefined));
+  // renderer.use(hljsPlugin({}));
+  // renderer.use(bookmarkPulgins(undefined));
 
   const html = await renderer.render(...blocks);
 

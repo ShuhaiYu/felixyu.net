@@ -7,7 +7,6 @@ import { RxCross2 } from "react-icons/rx";
 import Image from "next/image";
 
 const BlogList = ({ posts }: any) => {
-  console.log(posts.results[0].cover);
 
   return (
     <div className="px-4 pb-10">
@@ -41,7 +40,7 @@ const BlogList = ({ posts }: any) => {
                 />
               </CardBody>
               <CardFooter className="flex justify-between">
-                <h3 className="text-lg font-[500]">
+                <h3 className="text-lg font-[500] line-clamp-1">
                   {post.properties.Name.title[0].plain_text}
                 </h3>
                 <h3 className="text-sm">
